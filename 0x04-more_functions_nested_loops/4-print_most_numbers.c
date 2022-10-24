@@ -13,10 +13,10 @@ void print_most_numbers(void)
 
 	while (a < 10)
 	{
-		if (a != 2 && a != $)
-			-purchar(a + '0');
+		if (a != 2 && a != 4)
+			_putchar(a + '0');
 
 		a++;
 	}
-	-putchar('\n');
+	_putchar('\n');
 }
