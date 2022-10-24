@@ -8,7 +8,7 @@
  * Return: Always 0.
  */
 
-void mor_numbers(void)
+void more_numbers(void)
 {
 	int x, a;
 
