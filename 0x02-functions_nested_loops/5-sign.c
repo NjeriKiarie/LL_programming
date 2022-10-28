@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * print_sign - a function that prints the sign of a number
@@ -18,7 +19,7 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar(0);
+		_putchar(98);
 		return (0);
 	}
 	else if (n < 0)
