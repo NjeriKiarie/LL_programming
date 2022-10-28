@@ -2,14 +2,24 @@
 
 /**
  * print_last_digit - a function that prints the last digit of a number
+ * @n: the integer
  *
- * Returns: The value of the last digit
+ * Return: The value of the last digit
  */
 
-int print_last_digit(int l)
+int print_last_digit(int n)
 {
+	int l;
+
+	l = n % 10;
 	if (l < 0)
-		l = l * -1;
-	_putchar((n % 10) + '0');
-	return (n % 10);
+	{
+		_putchar(-l + 48);
+		return (-l);
+	}
+	else
+	{
+		_putchar(l + 48);
+		return (l);
+	}
 }
