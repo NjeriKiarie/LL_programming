@@ -6,7 +6,7 @@
  * Return: Nothing
  */
 
-void times_tables(void)
+void times_table(void)
 {
 	int n, m, i;
 
@@ -21,10 +21,10 @@ void times_tables(void)
 
 			i = n * m;
 
-			if (i <=9)
+			if (i <= 9)
 				_putchar(' ');
 			else
-				_putchar((i /10) + '0');
+				_putchar((i / 10) + '0');
 
 			_putchar(i % 10) + '0');
 		}
