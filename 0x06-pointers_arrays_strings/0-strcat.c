@@ -13,19 +13,20 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int dlen = 0, i;
+	int dlen = 0, i = 0;
 
-	while (dest[dlen])
+	while (*(dest + dlen) != '\0')
 	{
 		dlen++;
 	}
 
-	for (i = 0; src[i] != 0; i++)
+	while (*(src + i) != '\0' && dlen < 97)
 	{
-		dest[dlen] = src[i];
+		*(dest + dlen) = *(src + i);
 		dlen++;
+		i++
 	}
 
-	dest[dlen] = '\0';
+	*(dest + dlen) = '\0';
 	return (dest);
 }
