@@ -5,7 +5,7 @@
  * main - prints my name
  *
  * @argc: counts the number of parameters
- * @argv: Pointer of array of pointers 
+ * @argv: Pointer of array of pointers
  *
  * Return: Always 0
  */
