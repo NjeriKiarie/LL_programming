@@ -24,9 +24,9 @@ int main(int argc, char *argv[])
 		for (i = 1; i < 3; i++)
 		{
 			printf("argv[%d] = %s\n", i, argv[i]);
-			j = atoi(argv[1]) * atoi(argv[2]);
 		}
-
+		j = i;
+		j = i * atoi(argv[i]);
 		printf("Multiplication = %d\n", j);
 	}
 
