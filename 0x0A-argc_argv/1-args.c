@@ -3,21 +3,15 @@
 
 /**
  * main - prints the number of arguments int the program
- * @agrc: argument count
+ * @argc: argument count
  * @argv: argument vector
  *
  * Return: Always 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int number = 0;
-	(void) argv; /*Ignore argv*/
-	
-	while ( number < argc)
-	{
-		number++;
-	}
-	printf("%i\n", number - 1);
+	(void) argv; /*ignore argv*/
+	printf("%d\n", argc - 1);
 	return (0);
 }
