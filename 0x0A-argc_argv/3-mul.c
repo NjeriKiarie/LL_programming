@@ -21,11 +21,13 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		j = i;
-
 		for (i = 1; i < 3; i++)
-			j *= atoi(argv[i]);
-		printf("%d\n", j);
+		{
+			printf("argv[%d] = %s\n", i, argv[i]);
+			j = atoi(argv[1]) * atoi(argv[2]);
+		}
+
+		printf("Multiplication = %d\n", j);
 	}
 
 	return (0);
